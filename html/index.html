@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/index.css">
+        <script>
+            function setActive(id) {
+                document.getElementById('ca').classList.remove('active')
+                document.getElementById('e').classList.remove('active')
+                document.getElementById('s').classList.remove('active')
+                document.getElementById('ci').classList.remove('active')
+                document.getElementById('h').classList.remove('active')
+
+                document.getElementById("ca-div").style.display = "none";
+                document.getElementById("e-div").style.display = "none";
+                document.getElementById("s-div").style.display = "none";
+                document.getElementById("ci-div").style.display = "none";
+                document.getElementById("h-div").style.display = "none";
+
+                document.getElementById(id).classList.add('active')
+                document.getElementById(id+"-div").style.display = "block";
+            }
+
+            window.onload = () => {
+                if(!window.location.href.includes('#h')) {
+                    document.getElementById('h-div').style.display = "block"
+                    return window.location.href = "#h"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+<div class="sidebar">
+    <a href="#h" id="h" class="active" onclick="setActive('h')">Home</a>
+    <a href="#a" id="ca" onclick="setActive('ca')">Causes</a>
+    <a href="#b" id="e" onclick="setActive('e')">Effects</a>
+    <a href="#a" id="s" onclick="setActive('s')">Solution</a>
+    <a href="#l" id="ci" onclick="setActive('ci')">Citation</a>
+    <span>
+        <img src="../images/Picture3.png" style="max-width: 190px; width: auto; height: auto;">
+        <button style="margin-left: 40px; border:none;" onclick="window.open('https://www.stopbullying.gov/')">
+            <p style="color: black; font-size: 14px; font-family: Calibri;">Press here for help</p>
+        </button>
+        <h4 style="text-align: center;">Website made by: Conutik</h4>
+    </span>
+  </div>
+  
+  <div class="content">
+    <div id="h-div">
+        <h1 style="text-align: center; color: white;"> Feedback </h1>
+        <table border="1" style="margin-left:auto; margin-right:auto; width:800px; border-collapse: collapse; border-width: 4px; border-style: solid; border-color: white;">
+            <tr>
+            <td colspan="2">
+                <img src="../images/pfp.png" style="float: left; border-radius: 60px;">
+                <div style="float: left; margin-left: 15px;">
+                    <p style="font-size: 24px; font-family: Calibri;"></p>
+                </div>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="../images/pfp.png" style="float: left; border-radius: 60px;">
+                    <div style="float: left; margin-left: 15px;">
+                        <p style="font-size: 24px; font-family: Calibri;"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="../images/pfp.png" style="float: left; border-radius: 60px;">
+                    <div style="float: left; margin-left: 15px;">
+                        <p style="font-size: 24px; font-family: Calibri;"></p>
+                    </div>
+                </td>
+            </tr>
+           </table>
+
+           <p style="font-size: 24px; font-family: Calibri;">Why was this website created?</p>
+           <p style="font-size: 14px;"> The point of creating this website is raising awareness about cyber bullying specifically to the teenagers ages 11-18 telling them about cyberbullying and the effects and causes and how we can prevent it.</p>
+           <p style="font-size: 24px; font-family: Calibri;">What is bullying?</p>
+           <p style="font-size: 14px;">Bullying that occurs via digital devises is known as cyberbullying. Cyberbullying might involve shame or humilation caused by disclosing intimate or private information about another individual. Cyberbullying may sometimes cross the line into illegal or criminal activity.</p>
+
+           <div style="display: inline-block">
+               <img src="../images/Picture1-resize.png" style="margin-left: 125px;">
+               <img src="../images/Picture2-resize.png" style="margin-left: 175px;">
+           </div>
+    </div>
+    <div id="ca-div">
+        <p style="font-size: 24px; font-family: Calibri;">Causes:</p>
+        <p style="font-size: 24px; font-family: Calibri;">In many respects society has changed but in others it has remained the same the only thing that has changed are techniques. Cyberbullying has been around for a long time but only recently have people realized that it’s a problem that needs to be handled. Let's take a look at some factors that contribute to cyberbullying and how everyone can help to avoid it. There is a widespread misunderstanding that cyberbullying exclusively affects the youngsters of course they are affected by the problem. It made worse how difficult it is for parents to keep track on their children’s internet activities. Cyberbullying on the other hand is an issue that can and does impact individuals of all ages from all over the world.</p>
+        <div style="display: inline;">
+            <img src="../images/Picture4-resize.png" style="margin-left: 125px;">
+            <img src="../images/Picture5-resize.png" style="margin-left: 175px;">
+        </div>
+    </div>
+    <div id="e-div">
+        <p style="font-size: 24px; font-family: Calibri;">Effects:</p>
+        <p style="font-size: 24px; font-family: Calibri;">This might be due to a number of factors. Unlike conventional bullying, which is generally restricted to school and recognized bullies, cyberbullying can happen at any time day or night and is often committed by anonymous sources. This makes it more rutheless and in some cases, brutal.
+        </p>
+        <img src="../images/Picture6-resize.png" style="margin-left: auto; margin-right: auto; display: block;">
+    </div>
+    <div id="s-div">
+        <p style="font-size: 24px; font-family: Calibri;">Solution:</p>
+        <p style="font-size: 24px; font-family: Calibri;">Preventing cyberbullying is a matter of awareness and response which means knowing what children are doing and how they are vulnerable, then helping them learn to respond when their well-being is threatened by bullies, trolls, and other dangerous users online.</p>
+        <img src="../images/cyberbully stop.jpg" style="margin-left: auto; margin-right: auto; display: block;">
+    </div>
+    <div id="ci-div">
+        <h2 style="color: white;">References:</h2>
+        <ul style="color:white; font-size: large;">
+            <li>Assistant Secretary for Public Affairs (ASPA). </li>
+            <li>“What Is Cyberbullying.” StopBullying.gov, 27 Aug. 2021, https://www.stopbullying.gov/cyberbullying/what-is-it.
+            </li>
+            <li>“The Real Causes of Cyberbullying and How to Prevent It.” SOS Safety Magazine, 26 Nov. 2019, https://sossafetymagazine.com/bullying/the-real-causes-of-cyberbullying/.
+                Gordon, Sherri. </li>
+            <li>“Learn to Recognize the Real-Life Effects of Cyberbullying on Children.” Verywell Family, https://www.verywellfamily.com/what-are-the-effects-of-cyberbullying-460558</li>
+          </ul>
+    </div>
+  </div>
+    </body>
+</html>
